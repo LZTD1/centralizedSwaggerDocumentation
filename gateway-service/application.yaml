@@ -1,0 +1,40 @@
+server:
+  port: 8000
+
+spring:
+  application:
+    name: api-gateway
+
+
+springdoc:
+  swagger-ui:
+    path: /
+
+app:
+  api-config:
+    endpoints:
+      firstService:
+        gateway-prefix: /api
+        service-path: /first
+        service-url: http://${LOCAL_ADDR}:8001
+      secondService:
+        gateway-prefix: /api
+        service-path: /second
+        service-url: http://${LOCAL_ADDR}:8002
+      thirdService:
+        gateway-prefix: /api
+        service-path: /third
+        service-url: http://${LOCAL_ADDR}:8003
+      fooService:
+        gateway-prefix: /api
+        service-path: /foo
+        service-url: http://${LOCAL_ADDR}:8004
+      barService:
+        gateway-prefix: /api
+        service-path: /bar
+        service-url: http://${LOCAL_ADDR}:8005
+      helloService:
+        gateway-prefix: /api
+        service-path: /hello
+        service-url: http://${LOCAL_ADDR}:8006
+  local-addr: ${LOCAL_ADDR} # Local server address, example 192.168.10.10
