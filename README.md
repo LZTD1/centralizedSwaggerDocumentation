@@ -1,5 +1,5 @@
 ! NOTE: Initially, the manual was written in Russian, translated into English with the help of a translator, I apologize in advance for inaccuracies in the translation
-! RU manual - [./README_ru.md](https://github.com/LZTD1/centralizedSwaggerDocumentation/blob/main/gateway-service/application.yaml "Click to see")
+! RU manual - [./README_ru.md](https://github.com/LZTD1/centralizedSwaggerDocumentation/blob/main/README_ru.md "Click to see")
 # Centralized (single) Swagger page for all your microservices
 > This material does not claim a high degree of quality, it was created only for the same applicants as me, who at the beginning of their journey are wondering about a centralized Swagger page, be happy :)
 ###### 1. The original state
